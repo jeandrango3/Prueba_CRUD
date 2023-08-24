@@ -30,5 +30,12 @@ eliminar tareas.
 `src/main/resources/application.properties`.
 
 ```properties
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.h2.console.enabled=true
+server.port = 8090
+spring.datasource.url = jdbc:postgresql://localhost:5432/H2
+spring.datasource.username = postgres
+spring.datasource.password = Tefa1478
+spring.jpa.hibernate.ddl-auto = create-drop
+spring.jpa.show-sql = true
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql = true
+
